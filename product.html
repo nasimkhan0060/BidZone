@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View Page</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <h3 class="logo">BidZone</h3>
+        <nav class="navigation">
+            <a href="index_2.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="profile.html"><button class="btnLogin">Profile</button></a>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="product">
+            <div class="product-headings">
+                <div class="image-container">
+                    <img src="product.jpg" />
+                    <div class="bid-form-container" id="bid-menu">
+                        <div class="bid-form-title">
+                            <h4>Place a Bid</h4>
+                            <b>Please Enter Your Bid Amount</b>
+                        </div>
+                        <div class="bid-form-input">
+                            <input type="number" placeholder="Bid Amount" />
+                        </div>
+                        <div class="bid-form-amount">
+                            <div class="service-fee">
+                                <div class="service-fee-label">
+                                    Service Fee
+                                </div>
+                                <div class="service-fee-amount">
+                                    + 100 $
+                                </div>
+                            </div>
+                            <div class="total-amount">
+                                <div class="total-amount-label">
+                                    Bid Amount
+                                </div>
+                                <div class="total-amount-number">
+                                    + 0 $
+                                </div>
+                            </div>
+                            <div class="total-amount">
+                                <div class="total-amount-label">
+                                    Total
+                                </div>
+                                <div class="total-amount-number">
+                                    100 $
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid-form-button">
+                            <a href="payment.html"><button onclick="closeBidMenu()"> Proceed To Payment </button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-details">
+                <div class="product-name">
+                    <div class="product-name-title">
+                        <div class="info">
+                            <h2 class="name">Hasselblad 500C </h2>
+                            <div class="year">(1970-1994)</div>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <span class="favorite-icon"><i class="material-icons">favorite_border</i> 72</span>
+                    </div>
+                </div>
+                <div class="product-extra-info">
+                    <div class="tabs">
+                        <a class="tablinks" onclick="openTab(event, 'details')">Details</a>
+                        <a class="tablinks" onclick="openTab(event, 'bids')">Bids</a>
+                        <a class="tablinks" onclick="openTab(event, 'history')">History</a>
+                    </div>
+                    <div class="tab-contents">
+                        <div id="details" class="tabcontent">
+                            <div>The Hasselblad 500C is renowned for exceptional image quality and sturdy construction.
+                                It produces stunning images with clarity and detail, making it popular among
+                                professionals and enthusiasts. Its robust build ensures durability in demanding
+                                environments, making it a trusted companion for photographers.</div>
+                        </div>
+                        <div id="bids" class="tabcontent">
+                            <div class="bidder-info">
+                                <div class="avater">
+                                    <img src="male-1.png" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Red John</div>
+                                    <div class="amount"> 800 $</div>
+                                </div>
+                            </div>
+                            <div class="bidder-info">
+                                <div class="avater">
+                                    <img src="female-1.png" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Red Jane</div>
+                                    <div class="amount"> 400 $</div>
+                                </div>
+                            </div>
+                            <div class="bidder-info">
+                                <div class="avater">
+                                    <img src="male-2.png" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Blue John</div>
+                                    <div class="amount"> 200 $</div>
+                                </div>
+                            </div>
+                            <div class="bidder-info">
+                                <div class="avater">
+                                    <img src="female-2.png" />
+                                </div>
+                                <div class="info">
+                                    <div class="name">Blue Jane</div>
+                                    <div class="amount"> 100 $</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabcontent" id="history">
+                        No History
+                    </div>
+
+                </div>
+                <div class="creator-info-container">
+                    <div class="creator-info">
+                        <div class="avater">
+                            <img src="male-1.png" />
+                        </div>
+                        <div class="info">
+                            <div class="name">John Doe</div>
+                        </div>
+                    </div>
+                    <div class="location-info">
+                        <div class="name">Dhaka,Bangladesh</div>
+                    </div>
+                </div>
+                <div class="bid-info-container">
+                    <div class="bid-info">
+                        <div class="highest-bid">
+                            <label>Highest Bid</label>
+                            <b>800 $</b>
+                        </div>
+                        <div class="time-remaining">
+                            <label>Remaining Time</label>
+                            <b>2 Days</b>
+                        </div>
+                    </div>
+                    <div class="bid-now">
+                        <button onclick="showBidMenu()">Bid Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="product.js"></script>
+</body>
+
+</html>
